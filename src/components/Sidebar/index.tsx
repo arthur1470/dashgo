@@ -1,8 +1,5 @@
-import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Icon, Link, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
-import { RiContactsLine, RiDashboardLine, RiGitMergeLine, RiInputMethodLine } from "react-icons/ri";
+import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, useBreakpointValue } from "@chakra-ui/react";
 import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
-import { NavLink } from "./NavLink";
-import { NavSection } from "./NavSection";
 import { SidebarNav } from "./SidebarNav";
 
 export function Sidebar() {
