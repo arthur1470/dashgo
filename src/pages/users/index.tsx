@@ -27,6 +27,8 @@ export default function UserList() {
         });
 
         return users;
+    }, {
+        staleTime: 5 * 1000, // 5 seconds
     });    
     
     const isWideVersion = useBreakpointValue({
@@ -43,7 +45,7 @@ export default function UserList() {
 
                 <Box flex="1" borderRadius="8" bg="gray.800" p="8">
                     <Flex mb="8" justify="space-between" align="center">
-                        <Heading size="lg" fontweight="normal">Users</Heading>
+                        <Heading size="lg" fontWeight="normal">Users</Heading>
                         <Link href="/users/create" passHref>
                             <Button 
                                 as="a" 
